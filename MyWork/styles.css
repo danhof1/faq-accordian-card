@@ -1,33 +1,42 @@
-body {
-    box-sizing: border-box;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: "Kumbh Sans", sans-serif;
-    line-height: 1.4;
-    background: linear-gradient(365deg,hsl(261, 98%, 58%),hsl(298, 60%, 50%));
-  }
+body{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "Kumbh Sans", sans-serif;
+line-height: 1.4;
+background: linear-gradient(365deg,hsl(261, 98%, 58%),hsl(283, 74%, 52%));
+height: 100vh;
+}
 div{
-    border-radius: 20px;
-    background-color: white;
-    text-align: right;
-    margin-top: 130px;
-    margin-right: 270px;
-    margin-left: 270px;
-    padding-top: 40px;
-    padding-bottom: 60px;
+background: white;
+border-radius: 30px;
+margin: auto;
+width: 1200px;
 }
 h1{
-    text-align: center;
-    padding-left: 180px 
+text-align: center;
+padding-top: 30px;
+
 }
 ul{
-    list-style-type:none;
-    padding-right: 120px;
-    padding-bottom: 10px;
+list-style-type: none;
+text-align: center;
+margin: 10px;
 }
-img {
-    float: left;
-    padding-top: 25px;
-    
+ul li input{
+visibility: hidden;
+}
+ul li label{
+cursor: pointer;
+}
+ul li ul{
+font-size: 12px;
+visibility: hidden;
+}
+input:checked + label
+{
+color:red;
+}
+img{
+float: left;
 }

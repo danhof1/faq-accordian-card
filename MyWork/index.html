@@ -1,61 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body >  
+    <img src= 'woman.png' alt="accordian" />
+<div class= "box">
+    <h1>FAQ</h1>
     
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="./images/favicon-32x32.png"
-        />
-        <link rel="stylesheet" href="styles.css" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-    
-        <title>Frontend Mentor | FAQ Accordion Card</title>
-    </head>
-    <body>
-        
-    <div>    
-        <img src= 'woman.png' alt="accordian" />
-       
-        <h1>FAQ</h1>
-        <ul>
-            <li>How many team members can I invite?
-                <ul>
-                    <li>Filler</li>
-                </ul>
-            </li>
+    <ul>
+        <li><input type='radio' name='accordian' id= 'radio1'/><label for ='radio1'>How many team members can I invite?</label>
+            <ul>
+                <li>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                    team members for the Premium plan.</li>
+            </ul>
+        </li>
 
-            <li>What is the maximum file upload size
-                <ul>
-                    <li>Filler</li>
-                </ul>
-            </li>
+        <li><input type ='radio' name= 'accordian' id= 'radio2'/><label for='radio2'>What is the maximum file upload size</label>
+            <ul>
+                <li>What is the maximum file upload size?
+                    No more than 2GB. All files in your account must fit your allotted storage space.</li>
+            </ul>
+        </li>
 
-            <li>How do I reset my password?
-                <ul>
-                    <li>Filler</li>
-                </ul>
-            </li>
+        <li><input type ='radio' name= 'accordian' id= 'radio3'/><label for='radio3'>How do I reset my password?</label>
+            <ul>
+                <li>Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.</li>
+            </ul>
+        </li>
 
-            <li>Can I cancel my subscription?
-                <ul>
-                    <li>Filler</li>
-                </ul>
-            </li>
+        <li><input type ='radio' name ='accordian' id= 'radio4'/><label for= 'radio4'>Can I cancel my subscription?</label>
+            <ul>
+                <li>Yes! Send us a message and we’ll process your request no questions asked.</li>
+            </ul>
+        </li>
 
-            <li>Do you provide additional support?
-                <ul>
-                    <li>Filler</li>
-                </ul>
-            </li>
-        </ul>
-    </div>   
+        <li><input type ='radio' name ='accordian' id= 'radio5'/><label for = 'radio5'>Do you provide additional support.</label>
+            <ul>
+                <li>Chat and email support is available 24/7. Phone lines are open during normal business hours.</li>
+            </ul>
+        </li>
+    </ul>
+</div>   
+  
 </body>
 </html>
