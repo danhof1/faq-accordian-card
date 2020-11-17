@@ -55,11 +55,11 @@ summary::-webkit-details-marker {
 display: none
 }
 summary:after {
-content: url(arrow.svg);
+content: url(../images/arrow.svg);
 float: right;
 }
 details[open] summary:after {
-content: url(arrow.svg);
+content: url(../images/arrow.svg);
 transform: rotate(180deg);
 }
 summary:hover
@@ -96,11 +96,11 @@ width: 12%;
 }
 .shadow
 {
-    top: -45%;
-    right: 58%;
-    position: absolute;
-    z-index: 1;
-    width: 90%;
+top: -45%;
+right: 58%;
+position: absolute;
+z-index: 1;
+width: 90%;
 }
 
 
