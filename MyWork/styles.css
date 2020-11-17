@@ -12,14 +12,15 @@ position: relative;
 input
 {
 display: none;
+
 }
 label
 {
 display: block;    
-padding: 8px 22px;
-margin: 0 0 1px 0;
+text-align: center;
+padding: 35px 0px 15px 250px;/*currently using padding to get the position I want*/
 cursor: pointer;
-background:white;
+background:#E2E5F6;
 border-radius: 3px;
 color:black;
 transition: ease .5s;
@@ -27,7 +28,6 @@ transition: ease .5s;
 span{
 padding: 10px;
 border-radius: 10px;
-
 }
 span:hover
 {
@@ -38,39 +38,40 @@ font-weight: bold;
 {
 background: #E2E5F6;
 border-radius: 30px;
-text-align: right;
+text-align: center;
 margin: auto;
 position: inherit;
 width: 60%;
 height: 60%;
-top: 15%
+top: 15%;
 }
-.question
+.answer
 {
-padding: 10px 25px;
-margin: 0 0 1px 0;
-border-radius: 30px;
-text-align: right;
+text-align: center;
 margin: auto;
 position: inherit;
 font-size: 12px;
 }
-input + label + .question{
-    display: none;
+input + label + .answer{
+display: none;
 }
-input:checked + label + .question {
-    display: block;
+input:checked + label + .answer {
+display: block;
 }
 input:checked + label
 {
-    font-weight: bold;
+font-weight: bold;
 }
 h1
 {
 text-align: center;
 position: inherit;
-top: 5%
+top: 5%;
+margin: 30px 250px 40px 0px;
+padding-top: 40px;
 }
 img{
 float: left;
+margin-top: 300px;
+margin-left: 210px;
 }
