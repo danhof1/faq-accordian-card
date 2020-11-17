@@ -8,31 +8,7 @@ line-height: 1.4;
 background: linear-gradient(365deg,hsl(234, 50%, 54%),hsl(258, 73%, 68%));
 height: 100vh;
 position: relative;
-}
-input
-{
-display: none;
-
-}
-label
-{
-display: block;    
-text-align: center;
-padding: 35px 0px 15px 250px;/*currently using padding to get the position I want*/
-cursor: pointer;
-background:#E2E5F6;
-border-radius: 3px;
-color:black;
-transition: ease .5s;
-}
-span{
-padding: 10px;
-border-radius: 10px;
-}
-span:hover
-{
-background:#c7c7c7;
-font-weight: bold;
+font-size: 14pt
 }
 .content
 {
@@ -40,17 +16,53 @@ background: #E2E5F6;
 border-radius: 30px;
 text-align: center;
 margin: auto;
-position: inherit;
-width: 60%;
-height: 60%;
+position: relative;
+width: 65%;
+height: 65%;
 top: 15%;
+z-index: 0;
+overflow: hidden;
+}
+h1
+{
+text-align: center;
+position: inherit;
+margin: 5% 0% 5% 0%;
+padding-top: 10px;
+}
+label
+{
+display: block;  
+width: 35%;  
+position:relative;
+text-align: left;
+left:48%;
+top: -50px;
+padding: 20px 0;
+cursor: pointer;
+background:#E2E5F6;
+color:black;
+transition: ease .5s;
+}
+span{
+padding: 10px 0;
+border-radius: 10px;
+}
+span:hover
+{
+background:#c7c7c7;
+font-weight: bold;
+}
+input
+{
+display: none;
 }
 .answer
 {
-text-align: center;
-margin: auto;
+text-align: right;
 position: inherit;
-font-size: 12px;
+font-size: 12pt;
+
 }
 input + label + .answer{
 display: none;
@@ -62,16 +74,16 @@ input:checked + label
 {
 font-weight: bold;
 }
-h1
-{
-text-align: center;
-position: inherit;
-top: 5%;
-margin: 30px 250px 40px 0px;
-padding-top: 40px;
-}
+
 img{
-float: left;
-margin-top: 300px;
-margin-left: 210px;
+width:300px;
+top: 25%;
+left:12%;
+position: absolute;
+z-index: 1;
+width: 30%;
 }
+
+
+
+
