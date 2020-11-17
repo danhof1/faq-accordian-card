@@ -5,12 +5,12 @@ margin: 0;
 padding: 0;
 font-family: "Kumbh Sans", sans-serif;
 line-height: 1.4;
-background: linear-gradient(365deg,hsl(234, 50%, 54%),hsl(258, 73%, 68%));
+background: linear-gradient(365deg,hsl(240, 73%, 65%),hsl(273, 75%, 66%));
 height: 100vh;
 position: relative;
-font-size: 14pt
+font-weight: 400;
 }
-.content
+div
 {
 background: #E2E5F6;
 border-radius: 30px;
@@ -27,61 +27,80 @@ h1
 {
 text-align: center;
 position: inherit;
-margin: 5% 0% 5% 0%;
+margin: 5% 0% 5% 5%;
 padding-top: 10px;
 }
-label
+details
 {
 display: block;  
 width: 35%;  
 position:relative;
 text-align: left;
-left:48%;
-top: -50px;
+left:50%;
+top: -20px;
 padding: 20px 0;
 cursor: pointer;
 background:#E2E5F6;
-color:black;
+color:hsl(237, 12%, 33%);
 transition: ease .5s;
-}
-span{
-padding: 10px 0;
 border-radius: 10px;
+font-size: 14pt;
+border-bottom: 1px solid grey;
 }
-span:hover
+details[open] summary
+{
+    font-weight: 700;
+}
+summary::-webkit-details-marker {
+display: none
+}
+summary:after {
+content: url(arrow.svg);
+float: right;
+}
+details[open] summary:after {
+content: url(arrow.svg);
+transform: rotate(180deg);
+}
+summary:hover
 {
 background:#c7c7c7;
-font-weight: bold;
+font-weight: 700;
 }
-input
+p
 {
-display: none;
-}
-.answer
-{
-text-align: right;
-position: inherit;
-font-size: 12pt;
+color: hsl(237, 12%, 33%);
+text-align: center;
 
 }
-input + label + .answer{
-display: none;
+span{
+border-radius: 10px;
 }
-input:checked + label + .answer {
-display: block;
+span:hover{
+cursor: pointer; 
 }
-input:checked + label
-{
-font-weight: bold;
-}
-
-img{
-width:300px;
-top: 25%;
-left:12%;
+.woman{
+top: 15%;
+right: 58%;
 position: absolute;
 z-index: 1;
-width: 30%;
+width: 50%;
+}
+.box
+{
+top: 43%;
+right: 75%;
+position: absolute;
+z-index: 1;
+width: 12%;
+}
+.shadow
+{
+    top: -45%;
+    right: 58%;
+    position: absolute;
+    z-index: 1;
+    width: 90%;
 }
 
 

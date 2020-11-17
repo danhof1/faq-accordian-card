@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,47 +11,52 @@
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 <body >  
-    <img src= 'woman.svg' alt="accordian" />
-<div class= "content">
+    <img src = 'box.svg' alt='box' class='box'/>
+<div>
+    <img src= 'woman.svg' alt= 'woman' class= 'woman' />
     
+    <img src= 'shadow.svg' alt='shadow' class= 'shadow'/>
     <h1>FAQ</h1>
         
-    <input type='checkbox' name='accordian' id= 'checkbox1'/>
-        <label for ='checkbox1'><span>How many team members can I invite?<span></label>
-        <div class = 'answer'>
-            <p>You can invite up to 2 additional users on the Free plan. 
-            There is no limit on team members for the Premium plan.</p>
-        </div>
-        
-        <input type ='checkbox' name= 'accordian' id= 'checkbox2'/>
-        <label for='checkbox2'><span>What is the maximum file upload size?</span></label>
-        <div class='answer'>
-            <p>No more than 2GB. All files in your account must fit your 
-            allotted storage space.</p>
-        </div>
-        
-        <input type ='checkbox' name= 'accordian' id= 'checkbox3'/>
-        <label for='checkbox3'><span>How do I reset my password?</span></label>
-        <div class='answer'>
-            <p>Click “Forgot password” from the login page or “Change
+    <details> 
+        <summary >
+            <span>How many team members can I invite?</span>
+        </summary>  
+        <p>You can invite up to 2 additional users on the Free plan. 
+            There is no limit on team members for the Premium plan.</p>   
+    </details>
+
+    <details>  
+        <summary>
+        <span>What is the maximum file upload size?</span>
+        </summary>    
+        <p>No more than 2GB. All files in your account must fit your 
+            allotted storage space.</p>   
+    </details>
+
+    <details> 
+        <summary>
+            <span>How do I reset my password?</span>
+        </summary>   
+        <p>Click “Forgot password” from the login page or “Change
             password” from your profile page.A reset link will be 
-            emailed to you.</p>
-        </div>
-        
-        <input type ='checkbox' name ='accordian' id= 'checkbox4'/>
-        <label for= 'checkbox4'><span>Can I cancel my subscription?</span></label>
-        <div class ='answer'>
-            <p>Yes! Send us a message and we’ll process your request
-            no answers asked.</p>
-        </div>
-        
-        <input type ='checkbox' name ='accordian' id= 'checkbox5'/>
-        <label for = 'checkbox5'><span>Do you provide additional support?</span></label>
-        <div class='answer'> 
-            <p>Chat and email support is available 24/7. Phone lines are 
-            open during normal business hours.</p>
-       </div>
-</div>   
-  
-</body>
+            emailed to you.</p>    
+    </details>
+
+    <details> 
+        <summary>
+        <span>Can I cancel my subscription?</span>
+        </summary>   
+        <p>Yes! Send us a message and we’ll process your request
+            no answers asked.</p>    
+    </details>
+
+    <details> 
+        <summary>
+            <span>Do you provide additional support?</span>
+        </summary>     
+        <p>Chat and email support is available 24/7. Phone lines are 
+            open during normal business hours.</p>  
+    </details>
+
 </html>
