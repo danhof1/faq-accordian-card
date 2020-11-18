@@ -18,8 +18,8 @@ text-align: center;
 margin: auto;
 position: relative;
 width: 65%;
-height: 70%;
-top: 15%;
+height: 76%;
+top: 12%;
 z-index: 0;
 overflow: hidden;
 }
@@ -33,7 +33,7 @@ padding-top: 10px;
 details
 {
 display: block;  
-width: 40%;  
+width: 35%;  
 position:relative;
 text-align: left;
 left:50%;
@@ -43,7 +43,6 @@ cursor: pointer;
 background:#E2E5F6;
 color:hsl(237, 12%, 33%);
 transition: ease .5s;
-border-radius: 10px;
 font-size: 12pt;
 border-bottom: 1px solid grey;
 }
@@ -71,7 +70,6 @@ p
 {
 color: hsl(237, 12%, 33%);
 text-align: center;
-
 }
 span{
 border-radius: 10px;
@@ -88,11 +86,11 @@ width: 50%;
 }
 .box
 {
-top: 43%;
-right: 75%;
+top: 40%;
+left: 10%;
 position: absolute;
 z-index: 1;
-width: 12%;
+width: 15%;
 }
 .shadow
 {
