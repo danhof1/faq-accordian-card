@@ -18,7 +18,7 @@ text-align: center;
 margin: auto;
 position: relative;
 width: 65%;
-height: 65%;
+height: 70%;
 top: 15%;
 z-index: 0;
 overflow: hidden;
@@ -27,13 +27,13 @@ h1
 {
 text-align: center;
 position: inherit;
-margin: 5% 0% 5% 5%;
+margin: 5% 0% 2.5% 5%;
 padding-top: 10px;
 }
 details
 {
 display: block;  
-width: 35%;  
+width: 40%;  
 position:relative;
 text-align: left;
 left:50%;
@@ -44,7 +44,7 @@ background:#E2E5F6;
 color:hsl(237, 12%, 33%);
 transition: ease .5s;
 border-radius: 10px;
-font-size: 14pt;
+font-size: 12pt;
 border-bottom: 1px solid grey;
 }
 details[open] summary
