@@ -5,18 +5,20 @@ margin: 0;
 padding: 0;
 font-family: "Kumbh Sans", sans-serif;
 line-height: 1.4;
-background: linear-gradient(365deg,hsl(240, 73%, 65%),hsl(273, 75%, 66%));
+background: hsl(240, 73%, 65%);
 height: 100vh;
 position: relative;
 font-weight: 400;
+background-repeat: no-repeat;
 }
+
 .faq
 {
 background: white;
 border-radius: 30px;
 margin: auto;
 position: relative;
-width: 1100px;
+width: 1080px;
 height: 550px;
 top: 15%;
 z-index: 0;
@@ -26,6 +28,7 @@ background-repeat: no-repeat;
 background-position: -550px -300px ;
 background-size: 90%;
 }
+
 .faq-wrapper
 {
 overflow: hidden;
@@ -36,31 +39,30 @@ h1
 {
 text-align: center;
 position: relative;
-margin: 5% 0% 2.5% 7.5%;
+margin: 8% 0% 2.5% 5%;
 padding-top: 10px;
-font-size: 32pt;
 }
 
 .details
 {
 display: block;  
-width: 48%;  
+width: 40%;  
 position:relative;
 text-align: left;
 left:50%;
-top: -20px;
-padding: 20px 0;
+padding: 15px 0;
 cursor: pointer;
 background: white;
 color:hsl(237, 12%, 33%);
 transition: ease .5s;
 border-bottom: 1px solid #e7e7e9;
-
 }
+
 label:hover{
 color:  hsl(14, 88%, 65%);
 cursor: pointer; 
 }
+
 input[type='radio']{
 float: right;
 opacity: 0;
@@ -76,6 +78,7 @@ height: 15px;
 background-size: contain;
 float: right;
 }
+
 input:checked+label::after{
 content: '';
 transform: rotate(180deg);
@@ -86,6 +89,7 @@ height: 15px;
 background-size: contain;
 float: right;
 }
+
 p
 {
 color: hsl(237, 12%, 33%);
@@ -93,22 +97,33 @@ text-align: left;
 font-size: 10pt;
 margin: auto;
 }
+
 input + label + p{
 display: none;
 }
+
 input:checked + label + p{
 display: block;
 }
+
 input:checked + label
 {
 font-weight: bold;
 }
+
 .woman{
 top: 15%;
 margin-left:-60px;;
 position: absolute;
 z-index: 1;
 width: 45%;
+}
+.bg-phone {
+display: none;
+}
+
+.woman-phone {
+display: none;
 }
 .box
 {
@@ -118,6 +133,7 @@ position: absolute;
 z-index: 3;
 width: 25%;
 }
+
 .shadow
 {
 top: -50%;
@@ -128,18 +144,91 @@ width: 90%;
 }
 
 .attribution {
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-    z-index: 99;
+position: absolute;
+bottom: 0;
+left: 10px;
+z-index: 99;
 }
+
 .attribution a {
-    color: hsl(237, 12%, 33%);
-    text-decoration: none;
-    font-weight: 700;
+color: hsl(237, 12%, 33%);
+text-decoration: none;
+font-weight: 700;
 }
-  
+
 .attribution a:hover {
-    color: hsl(14, 88%, 65%);
-    text-decoration: underline;
+color: hsl(14, 88%, 65%);
+text-decoration: underline;
 }
+  @media (max-width: 1024px) {
+    body {
+      padding: 1.5rem;
+      padding-bottom: 0;
+      overflow: auto;
+    }
+    .images {
+      display: none;
+    }
+    .woman-img,
+    .box {
+      display: none;
+    }
+    .bg-phone,
+    .woman-phone {
+      display: block;
+    }
+    .bg-phone {
+      top: 30px;
+      left: 0;
+      right: 0;
+      width: 320px;
+      position: absolute;
+      padding: 0 0 0 2.5rem;
+      z-index: 10;
+      margin: 0 auto;
+    }
+    .bg-phone img {
+      width: 80%;
+    }
+    .woman-phone {
+      position: absolute;
+      z-index: 99;
+      top: -78px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      padding: 0 3rem 0 0;
+      width: 320px;
+    }
+    .woman-phone img {
+      width: 100%;
+    }
+    .faq {
+    width: 70%;
+    background-image: none;
+    }
+    .faq .faq-title {
+      text-align: center;
+    }
+    .faq .details,
+    .faq p {
+      font-size: 0.9rem;
+      padding-right: 10px;
+    }
+    .details{
+        left:20%;
+        width: 70%;
+    }
+    .faq .dropdown-arrow {
+      right: -10px;
+    }
+    .attribution {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      bottom: 5px;
+      left: 20px;
+    }
+    h1{
+        margin-top: 15%;
+    }
+  }
