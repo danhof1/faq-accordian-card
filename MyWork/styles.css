@@ -23,7 +23,7 @@ height: 550px;
 top: 15%;
 z-index: 0;
 filter: drop-shadow(1px 10px 12px rgba(0, 0, 0, 0.2));
-background-image: url('../images/bg-pattern-desktop.svg');
+background-image: url('https://tinyurl.com/y5fwlo8f');
 background-repeat: no-repeat;
 background-position: -550px -300px ;
 background-size: 90%;
@@ -70,7 +70,7 @@ opacity: 0;
 
 label::after{
 content: '';
-background-image: url('../images/icon-arrow-down.svg');
+background-image: url('https://tinyurl.com/yy28zlhl');
 background-repeat: no-repeat;
 display: block;
 width: 15px;
